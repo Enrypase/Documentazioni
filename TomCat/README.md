@@ -21,6 +21,10 @@ In questo caso basterà digitare ciò che ci viene suggerito. <br>
 ![JavaFound](...) <br>
 In quest'altro caso, invece, si può procedere alla prossima fase.
 
+### CheckPoint
+Se il seguente comando mostra che Java è presente sul sistema, è stato installato tutto correttamente!
+>       java -version
+
 
 ## :gear: Fase 2 - Installazione di Tomcat
 
@@ -41,9 +45,18 @@ Estrarre il programma appena scaricato:
 >         tar -xzvf fileName
 _Note: se non riesci a estrarre il programma significa che il file scaricato non è quello desiderato. Di conseguenza è consigliato provare a riscaricarlo controllando che il comando sia stato scritto correttamente._
 
-## :gear:
+### CheckPoint
+Se eseguendo i seguenti comandi notiamo che è presente la cartella decompressa, significa che abbiamo eseguito tutte le procedure correttamente:
+>         cd /opt/tomcat/
+>         ls
 
+## :gear: Fase 3 - Avviare il programma:
 
-abbiare dallo /opt/tomcat/bin/startup.sh
-E siamo apposto ;D
+Per avviare il programma basterà eseguire il seguente comando:
+>         . /op/tomcat/bin/startup.sh
 
+Una volta fatto ciò TomCat sarà "Up and running"!
+
+### CheckPoint 
+Per controllare se tomcat è stato installato correttamente basta andare su google e digitare localhost:8080. Se viene caricata la schermata di default significa che funziona tutto correttamente
+![TomCat](...)
