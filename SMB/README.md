@@ -28,14 +28,6 @@ _Nota: nel caso in cui la password sarà inferiore verrà visualizzato un messag
 ***nano /etc/samba/smb.conf*** <br>
 Configurare il file come quello presente [qui](/SMB/Files/smb.conf) <br>
 _Nota: di quel file sono state modificate solamente le ultime righe alle quali è stata aggiunta la sezione [sambashare] e le righe di testo presenti in essa_
-
--sudo nano 7etc/samba/smb.conf 
-	[sambashare]
-		comment = Samba on Ubuntu
-		path = /home/username/sambashare
-		read only = no
-		browsable = yes
-		(FILE DI ESEMPIO)
 		
 > Creare un'eccezione nel firewall per Samba: <br>
 ***ufw allow samba*** <br>
