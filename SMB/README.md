@@ -46,8 +46,10 @@ Per completare il tutto, aggiungere un username a Samba:
 _Nota: nel caso in cui si volesse rimuovere un esername da samba è necessario utilizzare ***pdbedit -x -u username***_
 
 ### CheckPoint:
-xxxxxxxx
-
+Per verificare la corretta installazione del programma basta digitare il seguente comando:
+>     netstat -tuln
+Se come dalla seguente figura si nota la porta 445 essere in ascolto, significa che il programma è stato installato con successo
+![Netstat](/SMB/Immagini/ConnessioneWindows.png)
 
 ## :gear: Fase 3 - Connessione alla cartella condivisa
 > Se si utilizza **windows** basta andare nell'esplora risorse e inserire il seguente percorso: ***\\\ip-address\sharedFolder*** <br>
@@ -57,4 +59,5 @@ xxxxxxxx
 ![ConnessioneUbuntu](/SMB/Immagini/ConnessioneUbuntu.png)
 
 ### CheckPoint:
-xxxxxxxx
+Per verificare che tutto sia andato a buon termine non c'è altro da fare che tentare di fare l'accesso alla cartella condivisa. <br>
+Se è possibile farlo significa che è stato installato e configurato tutto correttamente, in caso contrario, se sono stati tutti i checkpoint descritti in precedenza, bisognerà ricontrollare i file di configurazione.
