@@ -14,11 +14,11 @@ Per aggiornare i programmi presenti nel sistema operativo eseguire i seguenti co
 Digitare il seguente comando:
 >        java -version
 Nel caso in cui java non fosse presente sarà visualizzato il seguente messaggio: <br>
-> ![JavaNotFound](/TomCat/Immagini/JavaNotFound) <br>
+> ![JavaNotFound](/TomCat/Immagini/JavaNotFound.png) <br>
 In questo caso basterà digitare ciò che ci viene suggerito. <br>
 
 > Altrimenti sarà visualizzato un messaggio simile al seguente: <br>
-![JavaFound](/TomCat/Immagini/JavaFound) <br>
+![JavaFound](/TomCat/Immagini/JavaFound.png) <br>
 In quest'altro caso, invece, si può procedere alla prossima fase.
 
 ### CheckPoint
