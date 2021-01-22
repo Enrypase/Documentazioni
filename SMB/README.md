@@ -9,9 +9,9 @@ Inoltre, è necessario controllare se Samba è presente sul sistema operativo: <
 >     whereis samba
 Il comando restituirà due output differenti. <br>
 Se Samba **è presente** verrà restituita la directory dove è installato; <br>
-![PercorsoTrovato]()
-Se Samba **non è presente** sarà restituito un messaggio indicante la mancata presenza del programma. <br>
-![PercorsoNonTrovato]()
+![PercorsoTrovato]() <br>
+Se Samba **non è presente**  sarà restituito un messaggio indicante la mancata presenza del programma. <br>
+![PercorsoNonTrovato]() <br>
  
 ### CheckPoint:
 Per verificare il corretto aggiornamento del sistema basta ri-eseguire i comandi sopra-elencati e se sullo schermo dovesse comparire che sono stati aggiornati 0 pacchetti, significa che sono stati già aggiornati correttamente in precedenza.
@@ -25,7 +25,7 @@ Se Samba non è presente, installarlo:
 reazione di un utente per Samba: <br>
 >     useradd -b /bin/bash -d /home/username/sambaFolder -m username
 >     passwd username
-![Username]()
+![Username]() <br>
 Così facendo per accedere alla cartella di Samba da quasiasi sistema si drovrà mettere username e password diverse da quelle "principali". <br>
 _Nota: nel caso in cui la password sarà inferiore verrà visualizzato un messaggio indicante la mancata sicurezza di quest'ultima_ <br>
 
@@ -36,7 +36,7 @@ _Nota: di quel file sono state modificate solamente le ultime righe alle quali �
 
 Creare un'eccezione nel firewall per Samba: <br>
 >     ufw allow samba
-![Firewall]()
+![Firewall]() <br>
 
 Riavviare Samba: <br>
 >     servive smdb restart
