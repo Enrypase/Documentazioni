@@ -9,9 +9,9 @@ Inoltre, è necessario controllare se Samba è presente sul sistema operativo: <
 >     whereis samba
 Il comando restituirà due output differenti. <br>
 Se Samba **è presente** verrà restituita la directory dove è installato; <br>
-![PercorsoTrovato]() <br>
+![PercorsoTrovato](/SMB/Immagini/PercorsoTrovato.png) <br>
 Se Samba **non è presente**  sarà restituito un messaggio indicante la mancata presenza del programma. <br>
-![PercorsoNonTrovato]() <br>
+![PercorsoNonTrovato](/SMB/Immagini/PercorsoNonTrovato.png) <br>
  
 ### CheckPoint:
 Per verificare il corretto aggiornamento del sistema basta ri-eseguire i comandi sopra-elencati e se sullo schermo dovesse comparire che sono stati aggiornati 0 pacchetti, significa che sono stati già aggiornati correttamente in precedenza.
@@ -25,7 +25,7 @@ Se Samba non è presente, installarlo:
 reazione di un utente per Samba: <br>
 >     useradd -b /bin/bash -d /home/username/sambaFolder -m username
 >     passwd username
-![Username]() <br>
+![Username](/SMB/Immagini/Username.png) <br>
 Così facendo per accedere alla cartella di Samba da quasiasi sistema si drovrà mettere username e password diverse da quelle "principali". <br>
 _Nota: nel caso in cui la password sarà inferiore verrà visualizzato un messaggio indicante la mancata sicurezza di quest'ultima_ <br>
 
@@ -36,7 +36,7 @@ _Nota: di quel file sono state modificate solamente le ultime righe alle quali �
 
 Creare un'eccezione nel firewall per Samba: <br>
 >     ufw allow samba
-![Firewall]() <br>
+![Firewall](/SMB/Immagini/Firewall.png) <br>
 
 Riavviare Samba: <br>
 >     servive smdb restart
@@ -51,10 +51,10 @@ xxxxxxxx
 
 ## :gear: Fase 3 - Connessione alla cartella condivisa
 > Se si utilizza **windows** basta andare nell'esplora risorse e inserire il seguente percorso: ***\\\ip-address\sharedFolder*** <br>
-![ConnessioneWindows](/SMB/Immagini/ConnessioneWindows)
+![ConnessioneWindows](/SMB/Immagini/ConnessioneWindows.png)
 
 > Se si utilizza un sistema **Ubuntu** oppure ***macOS***, invece, digitare il seguente percorso: ***smb://ip-address/sharedFolder*** <br>
-![ConnessioneUbuntu](/SMB/Immagini/ConnessioneUbuntu)
+![ConnessioneUbuntu](/SMB/Immagini/ConnessioneUbuntu.png)
 
 ### CheckPoint:
 xxxxxxxx
