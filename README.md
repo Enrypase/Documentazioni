@@ -1,2 +1,7 @@
 # Documentazioni
-In questa repository sono contenute tutte le documentazioni da me effettuate.
+
+### Lista documentazioni:
+* Apache Web Server
+* FTP Server
+* SMB (Samba)
+* Apache Tomcat
