@@ -5,9 +5,9 @@
 Per aggiornare i programmi presenti nel sistema operativo eseguire i seguenti comandi: <br>
 
 >
-> apt-get update
+>     apt-get update
 >
-> apt-get upgrade
+>     apt-get upgrade
 
 > Inoltre, è necessario controllare se Samba è presente sul sistema operativo: <br>
  ***whereis samba*** <br>
@@ -53,5 +53,7 @@ _Nota: nel caso in cui si volesse rimuovere un esername da samba è necessario u
 
 ## :gear: Fase 3 - Connessione alla cartella condivisa
 > Se si utilizza **windows** basta andare nell'esplora risorse e inserire il seguente percorso: ***\\\ip-address\sharedFolder***
+![ConnessioneWindows](/SMB/Immagini/ConnessioneWindows)
 
 > Se si utilizza un sistema **Ubuntu** oppure ***macOS***, invece, digitare il seguente percorso: ***smb://ip-address/sharedFolder***
+![ConnessioneUbuntu](/SMB/Immagini/ConnessioneUbuntu)
