@@ -2,10 +2,11 @@
 
 
 ## :gear: Fase 1 - Preparazione del S.O.
-> Per aggiornare i programmi presenti nel sistema operativo eseguire i seguenti comandi: <br>
- ***apt-get update*** <br>
- ***apt-get upgrade*** <br>
-
+Per aggiornare i programmi presenti nel sistema operativo eseguire i seguenti comandi: <br>
+>
+>apt-get update
+>apt-get upgrade
+> 
 > Inoltre, è necessario controllare se Samba è presente sul sistema operativo: <br>
  ***whereis samba*** <br>
  Il comando restituirà due output differenti. <br>
@@ -17,18 +18,26 @@
 
 > Se Samba non è presente, installarlo: <br>
 ***apt-get install samba*** <br>
+### CheckPoint:
+> Per controllare se l'installazione di Samba è andato a buon fine basta digitare: <br>
+***systemctl status samba*** <br>
+Se il programma risulta essere installato, di conseguenza, significa l'installazione essere andata a buon fine <br>
 
 > Creazione di un utente per Samba: <br>
 ***useradd -b /bin/bash -d /home/username/sambaFolder -m username*** <br>
 ***passwd username*** <br>
 Così facendo per accedere alla cartella di Samba da quasiasi sistema si drovrà mettere username e password diverse da quelle "principali". <br>
 _Nota: nel caso in cui la password sarà inferiore verrà visualizzato un messaggio indicante la mancata sicurezza di quest'ultima_ <br>
+### CheckPoint:
+L'effettiva esecuzione delle operazioni si presume se non vengono visualizzati messaggi di errore e, verificata, una volta che si tenterà la connessione. <br>
 
 > Configurazione del file di Samba: <br>
 ***nano /etc/samba/smb.conf*** <br>
 Configurare il file come quello presente [qui](/SMB/Files/smb.conf) <br>
 _Nota: di quel file sono state modificate solamente le ultime righe alle quali è stata aggiunta la sezione [sambashare] e le righe di testo presenti in essa_
-		
+### CheckPoint:
+L'effettiva esecuzione delle operazioni si presume se non vengono visualizzati messaggi di errore e, verificata, una volta che si tenterà la connessione. <br>		
+
 > Creare un'eccezione nel firewall per Samba: <br>
 ***ufw allow samba*** <br>
 
