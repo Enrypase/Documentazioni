@@ -1,6 +1,7 @@
 # Configurazione Protocollo Samba
 
-Prefazione: è **necessario** eseguire tutti i comandi sottostanti da **sudo!** <br>
+## Note Iniziali
+Si ritiene **necessario** eseguire tutti i comandi sottostanti da **sudo!** <br>
 Utilizzare SSH se si pensa che possa rendere il tutto più comodo. <br>
 ## :gear: Fase 1 - Preparazione del S.O.
 Per aggiornare i programmi presenti nel sistema operativo eseguire i seguenti comandi: <br>
