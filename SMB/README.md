@@ -35,6 +35,12 @@ _Nota: di quel file sono state modificate solamente le ultime righe alle quali Ã
 > Riavviare Samba: <br>
 ***servive smdb restart*** <br>
 
--Aggiungere l'user a samba con smbpasswd -a username --> passwd --> passwd
-- Provare la connessione :D
-- se ci sono problemi provare a controllare il file di configurazione
+> Per completare il tutto, aggiungere un username a Samba:
+***smbpasswd -a username***
+_Nota: nel caso in cui si volesse rimuovere un esername da samba Ã¨ necessario utilizzare ***pdbedit -x -u username***_
+
+
+## :gear: Fase 3 - Connessione alla cartella condivisa
+> Se si utilizza **windows** basta andare nell'esplora risorse e inserire il seguente percorso: ***\\ip-address\sharedFolder***
+
+> Se si utilizza un sistema **Ubuntu** oppure ***macOS***, invece, digitare il seguente percorso: ***smb://ip-address/sharedFolder***
