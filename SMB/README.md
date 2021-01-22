@@ -49,7 +49,7 @@ _Nota: nel caso in cui si volesse rimuovere un esername da samba è necessario u
 Per verificare la corretta installazione del programma basta digitare il seguente comando:
 >     netstat -tuln
 Se come dalla seguente figura si nota la porta 445 essere in ascolto, significa che il programma è stato installato con successo
-![Netstat](/SMB/Immagini/ConnessioneWindows.png)
+![Netstat](/SMB/Immagini/Netstat.png)
 
 ## :gear: Fase 3 - Connessione alla cartella condivisa
 > Se si utilizza **windows** basta andare nell'esplora risorse e inserire il seguente percorso: ***\\\ip-address\sharedFolder*** <br>
