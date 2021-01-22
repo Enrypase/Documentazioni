@@ -1,10 +1,33 @@
-comandi:
--Verificare che il so sia aggiornato (update & upgrade)
--Controllare se è presente samba
-	- se si top
-	- se no installa con apt-get install samba
--creare utente per samba (useradd -b /bin/bash -d /home/username/sambaFolder -m username)
--aggiungere password all'user con passwd username --> pass --> pass (mostra messaggio se < 8 caratteri)
+# Configurazione Protocollo Samba
+
+
+## :gear: Fase 1 - Preparazione del S.O.
+> Per aggiornare i programmi presenti nel sistema operativo eseguire i seguenti comandi: <br>
+ ***apt-get update*** <br>
+ ***apt-get upgrade*** <br>
+
+> Inoltre, è necessario controllare se Samba è presente sul sistema operativo: <br>
+ ***whereis samba*** <br>
+ Il comando restituirà due output differenti. <br>
+ Se Samba **è presente** verrà restituita la directory dove è installato; <br>
+ Se Samba **non è presente** sarà restituito un messaggio indicante la mancata presenza del programma. <br>
+ 
+ 
+## :gear: Fase 2 - Installazione di Samba e configurazione
+
+> Se Samba non è presente, installarlo: <br>
+***apt-get install samba*** <br>
+
+> Creazione di un utente per Samba: <br>
+***useradd -b /bin/bash -d /home/username/sambaFolder -m username*** <br>
+***passwd username*** <br>
+Così facendo per accedere alla cartella di Samba da quasiasi sistema si drovrà mettere username e password diverse da quelle "principali". <br>
+_Nota: nel caso in cui la password sarà inferiore verrà visualizzato un messaggio indicante la mancata sicurezza di quest'ultima_ <br>
+
+> Configurazione del file di Samba: <br>
+***nano /etc/samba/smb.conf*** <br>
+Configurare il file come quello presente [qui](/Files/...) <br>
+
 -sudo nano 7etc/samba/smb.conf 
 	[sambashare]
 		comment = Samba on Ubuntu
@@ -12,8 +35,12 @@ comandi:
 		read only = no
 		browsable = yes
 		(FILE DI ESEMPIO)
-- service smdb restart --> Restartaimo
-- sudo ufw allow samba --> Mettiamo i permessi per samba nel firewall
+		
+> Creare un'eccezione nel firewall per Samba: <br>
+***ufw allow samba*** <br>
+
+> Riavviare Samba: <br>
+***servive smdb restart*** <br>
 
 -Aggiungere l'user a samba con smbpasswd -a username --> passwd --> passwd
 - Provare la connessione :D
