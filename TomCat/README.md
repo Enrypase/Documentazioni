@@ -17,8 +17,8 @@ Nel caso in cui java non fosse presente sarà visualizzato il seguente messaggio
 > ![JavaNotFound](/TomCat/Immagini/JavaNotFound.png) <br>
 In questo caso basterà digitare ciò che ci viene suggerito. <br>
 
-> Altrimenti sarà visualizzato un messaggio simile al seguente: <br>
-![JavaFound](/TomCat/Immagini/JavaFound.png) <br>
+Altrimenti sarà visualizzato un messaggio simile al seguente: <br>
+> ![JavaFound](/TomCat/Immagini/JavaFound.png) <br>
 In quest'altro caso, invece, si può procedere alla prossima fase.
 
 ### CheckPoint
