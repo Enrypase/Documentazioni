@@ -3,10 +3,12 @@
 
 ## :gear: Fase 1 - Preparazione del S.O.
 Per aggiornare i programmi presenti nel sistema operativo eseguire i seguenti comandi: <br>
+
 >
->apt-get update
->apt-get upgrade
-> 
+> apt-get update
+>
+> apt-get upgrade
+
 > Inoltre, è necessario controllare se Samba è presente sul sistema operativo: <br>
  ***whereis samba*** <br>
  Il comando restituirà due output differenti. <br>
