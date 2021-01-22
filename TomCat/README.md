@@ -58,5 +58,5 @@ Per avviare il programma basterà eseguire il seguente comando:
 Una volta fatto ciò TomCat sarà "Up and running"!
 
 ### CheckPoint 
-Per controllare se tomcat è stato installato correttamente basta andare su google e digitare localhost:8080. Se viene caricata la schermata di default significa che funziona tutto correttamente
-![TomCat](...)
+Per controllare se tomcat è stato installato correttamente basta andare su google e digitare localhost:8080. Se viene caricata la schermata di default significa che funziona tutto correttamente. <br>
+![TomCat](...) <br>
