@@ -41,6 +41,6 @@ _Nota: nel caso in cui si volesse rimuovere un esername da samba è necessario u
 
 
 ## :gear: Fase 3 - Connessione alla cartella condivisa
-> Se si utilizza **windows** basta andare nell'esplora risorse e inserire il seguente percorso: ***\\ip-address\sharedFolder***
+> Se si utilizza **windows** basta andare nell'esplora risorse e inserire il seguente percorso: ***\\\ip-address\sharedFolder***
 
 > Se si utilizza un sistema **Ubuntu** oppure ***macOS***, invece, digitare il seguente percorso: ***smb://ip-address/sharedFolder***
