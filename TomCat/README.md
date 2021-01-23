@@ -87,17 +87,22 @@ Una volta fatto ciò TomCat sarà "Up and running"!
 ### CheckPoint
 Per controllare che TomCat si avvii in automatico basta riavviare il computer ed eseguire i seguenti passaggi: <br>
 * Se si utilizza ubuntu con GUI per controllare che TomCat sia in funzione basta digitare localhost:8080. <br>
-![TomCatUbuntu](...) <br>
+![TomCatUbuntu](/TomCat/Immagini/TomCatUbuntu.png) <br>
 * Altrimenti basta digitare ipDellaMacchinaConTomcat:8080. <br>
-![TomCatWindows](...) <br>
+![TomCatWindows](/TomCat/Immagini/TomCatWindows.png) <br>
 
 
 ## :gear: Fase 4 - Ultime configurazioni
 
 Come ultimo passaggio basta configurare l'username per gestire TomCat: <br>
->         nano /opt/tomcat/conf/tomcat-users.xml
-Aggiungere la seguente riga come in [questo file](...): <br>
+>         <role rolename="manager-gui" />
+>         <role rolename="admin-gui" />changes
+>         <user username="admin" password="password" roles="manager-gui,admin-gui"/>
+Aggiungere la seguente riga come in [questo file](/TomCat/Files/TomCatUbuntu.png): <br>
 >         <user username="admin" password="password" roles="manager-gui,admin-gui"/>
 
 Infine riavviare TomCat ed il gioco è fatto!
 >         systemctl restart tomcat
+
+### CheckPoint:
+Per controllare se i cambiamenti siano stati effettuati con successo basta provare, quando richiesto, di inserire username e password! <br>
