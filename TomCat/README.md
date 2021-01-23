@@ -45,21 +45,48 @@ Estrarre il programma appena scaricato:
 >         tar -xzvf fileName
 _Note: se non riesci a estrarre il programma significa che il file scaricato non è quello desiderato. Di conseguenza è consigliato provare a riscaricarlo controllando che il comando sia stato scritto correttamente._
 
+* CIANE, passare i file dalla decompressa alla generale + FIREWALL ufw allow 8080
+
 ### CheckPoint
 Se eseguendo i seguenti comandi notiamo che è presente la cartella decompressa, significa che abbiamo eseguito tutte le procedure correttamente:
 >         cd /opt/tomcat/
 >         ls
 
+
 ## :gear: Fase 3 - Avviare il programma:
 
-Per avviare il programma basterà eseguire il seguente comando:
->         . /op/tomcat/bin/startup.sh
---> Problemi con il run, da controllare (catalina.sh missing, file absent or permission, this file is needed to run the program)
+Per avviare il programma basterà eseguire il seguente comando: <br>
+>         ./op/tomcat/bin/startup.sh
+
+**Facoltativo** Creare il servizio di TomCat: <br>
+Per prima cosa, bisogna creare il file di configurazione del servizio: <br>
+>         nano /e tc/systemd/system/tomcat.service
+Copiare nel file la configurazione che è possibile trovare [qui](...) <br>
+Ora, bisogna riavviare i demoni tramite: <br>
+>         systemctl daemon-reload
+Una volta fatto ciò il servizio di TomCat è stato creato con successo! <br>
+
+Avviare lo script di TomCat all'avvio del sistema: <br>
+Per fare ciò ci sono più possibilità, io ho utilizzato **/rc.local**. <br>
+Per fare ciò modificare, se già presente oppure creare il seguente file: <br>
+>         nano /etc/rc.local
+Una volta fatto ciò inserire le seguenti righe: <br>
+>         #! /bin/bash
+>         [PercorsoDelloScript]
+>         exit 0
+Infine rendere il file eseguibile: <br>
+>         chmod +x /etc/rc.local
 
 Una volta fatto ciò TomCat sarà "Up and running"!
 
-### CheckPoint 
-Se si utilizza ubuntu con GUI per controllare che TomCat sia in funzione basta digitare localhost:8080. <br>
+### CheckPoint
+Per controllare che TomCat si avvii in automatico basta riavviare il computer ed eseguire i seguenti passaggi: <br>
+* Se si utilizza ubuntu con GUI per controllare che TomCat sia in funzione basta digitare localhost:8080. <br>
 ![TomCatUbuntu](...) <br>
-Altrimenti basta digitare ipDellaMacchinaConTomcat:8080. <br>
+* Altrimenti basta digitare ipDellaMacchinaConTomcat:8080. <br>
 ![TomCatWindows](...) <br>
+
+
+## :gear: Fase 4 - Ultime configurazioni
+
+Come ultimo passaggio basta configurare l'username per gestire TomCat:
