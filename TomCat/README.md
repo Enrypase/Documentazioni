@@ -98,7 +98,7 @@ Come ultimo passaggio basta configurare l'username per gestire TomCat: <br>
 >         <role rolename="manager-gui" />
 >         <role rolename="admin-gui" />changes
 >         <user username="admin" password="password" roles="manager-gui,admin-gui"/>
-Aggiungere la seguente riga come in [questo file](/TomCat/Files/TomCatUbuntu.png): <br>
+Aggiungere la seguente riga come in [questo file](/TomCat/Files/tomcat-users.xml): <br>
 >         <user username="admin" password="password" roles="manager-gui,admin-gui"/>
 
 Infine riavviare TomCat ed il gioco è fatto!
