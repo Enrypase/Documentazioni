@@ -90,7 +90,6 @@ Una volta fatto ciò TomCat sarà "Up and running"!
 Per controllare che TomCat si avvii in automatico basta riavviare il computer ed eseguire i seguenti passaggi: <br> <br>
 * Se si utilizza ubuntu con GUI per controllare che TomCat sia in funzione basta digitare localhost:8080. <br> <br>
 ![TomCatUbuntu](/TomCat/Immagini/TomCatUbuntu.png) <br>
-<br>
 * Altrimenti basta digitare ipDellaMacchinaConTomcat:8080. <br> <br>
 ![TomCatWindows](/TomCat/Immagini/TomCatWindows.png) <br>
 
