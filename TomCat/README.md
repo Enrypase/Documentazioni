@@ -45,7 +45,12 @@ Estrarre il programma appena scaricato:
 >         tar -xzvf fileName
 _Note: se non riesci a estrarre il programma significa che il file scaricato non è quello desiderato. Di conseguenza è consigliato provare a riscaricarlo controllando che il comando sia stato scritto correttamente._
 
-* CIANE, passare i file dalla decompressa alla generale + FIREWALL ufw allow 8080
+Una volta fatto ciò eliminare i file inutili presenti nella cartella e spostare i file presenti nella cartella estratta in tomcat: <br>
+>         rm [fileName]
+>         mc [fileName] [newPath]
+
+Infine creare un'eccezione nel firewall: <br>
+>         udw allow 8080
 
 ### CheckPoint
 Se eseguendo i seguenti comandi notiamo che è presente la cartella decompressa, significa che abbiamo eseguito tutte le procedure correttamente:
@@ -89,4 +94,10 @@ Per controllare che TomCat si avvii in automatico basta riavviare il computer ed
 
 ## :gear: Fase 4 - Ultime configurazioni
 
-Come ultimo passaggio basta configurare l'username per gestire TomCat:
+Come ultimo passaggio basta configurare l'username per gestire TomCat: <br>
+>         nano /opt/tomcat/conf/tomcat-users.xml
+Aggiungere la seguente riga come in [questo file](...): <br>
+>         <user username="admin" password="password" roles="manager-gui,admin-gui"/>
+
+Infine riavviare TomCat ed il gioco è fatto!
+>         systemctl restart tomcat
