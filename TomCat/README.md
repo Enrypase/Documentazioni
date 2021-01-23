@@ -13,11 +13,13 @@ Per aggiornare i programmi presenti nel sistema operativo eseguire i seguenti co
 
 Digitare il seguente comando:
 >        java -version
-Nel caso in cui java non fosse presente sarà visualizzato il seguente messaggio: <br>
-> ![JavaNotFound](/TomCat/Immagini/JavaNotFound.png) <br>
-In questo caso basterà digitare ciò che ci viene suggerito. <br>
 
-Altrimenti sarà visualizzato un messaggio simile al seguente: <br>
+* Nel caso in cui java non fosse presente sarà visualizzato il seguente messaggio: <br>
+> ![JavaNotFound](/TomCat/Immagini/JavaNotFound.png) <br>
+In questo caso basterà digitare ciò che ci viene suggerito, per esempio: <br>
+>         apt-get install openjdk-15-jre
+
+* Altrimenti sarà visualizzato un messaggio simile al seguente: <br>
 > ![JavaFound](/TomCat/Immagini/JavaFound.png) <br>
 In quest'altro caso, invece, si può procedere alla prossima fase.
 
@@ -85,10 +87,11 @@ Infine rendere il file eseguibile: <br>
 Una volta fatto ciò TomCat sarà "Up and running"!
 
 ### CheckPoint
-Per controllare che TomCat si avvii in automatico basta riavviare il computer ed eseguire i seguenti passaggi: <br>
-* Se si utilizza ubuntu con GUI per controllare che TomCat sia in funzione basta digitare localhost:8080. <br>
+Per controllare che TomCat si avvii in automatico basta riavviare il computer ed eseguire i seguenti passaggi: <br> <br>
+* Se si utilizza ubuntu con GUI per controllare che TomCat sia in funzione basta digitare localhost:8080. <br> <br>
 ![TomCatUbuntu](/TomCat/Immagini/TomCatUbuntu.png) <br>
-* Altrimenti basta digitare ipDellaMacchinaConTomcat:8080. <br>
+<br>
+* Altrimenti basta digitare ipDellaMacchinaConTomcat:8080. <br> <br>
 ![TomCatWindows](/TomCat/Immagini/TomCatWindows.png) <br>
 
 
