@@ -15,12 +15,12 @@ Digitare il seguente comando:
 >        java -version
 
 * Nel caso in cui java non fosse presente sarà visualizzato il seguente messaggio: <br>
-> ![JavaNotFound](/TomCat/Immagini/JavaNotFound.png) <br>
+![JavaNotFound](/TomCat/Immagini/JavaNotFound.png) <br>
 In questo caso basterà digitare ciò che ci viene suggerito, per esempio: <br>
 >         apt-get install openjdk-15-jre
 
 * Altrimenti sarà visualizzato un messaggio simile al seguente: <br>
-> ![JavaFound](/TomCat/Immagini/JavaFound.png) <br>
+![JavaFound](/TomCat/Immagini/JavaFound.png) <br>
 In quest'altro caso, invece, si può procedere alla prossima fase.
 
 ### CheckPoint
@@ -36,6 +36,7 @@ _Nota: la directory può anche essere diversa da quella sopra idicata. In questo
 
 Spostarsi nella directory nella quale si vuole scaricare e, in seguito, installare TomCat tramite il seguente comando:
 >         cd directory
+_Nota: La directory consigliata è quella utilizzata durante la creazione dell'utente, in questo caso /opt/tomcat_
 
 Una volta fatto ciò bisogna scaricare il programma:
 1) Se si utilizza ubuntu tramite GUI basterà andare sul sequente [sito](https://tomcat.apache.org/download-90.cgi) e scaricare il file che finisce per .tar.gz
@@ -81,6 +82,8 @@ Una volta fatto ciò inserire le seguenti righe: <br>
 >         #! /bin/bash
 >         [PercorsoDelloScript]
 >         exit 0
+_Nota: Guarda il [File di esempio](/TomCat/Files/rc.local) se hai dubbi_
+
 Infine rendere il file eseguibile: <br>
 >         chmod +x /etc/rc.local
 
