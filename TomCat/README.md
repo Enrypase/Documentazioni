@@ -68,7 +68,7 @@ Per avviare il programma basterà eseguire il seguente comando: <br>
 
 **Facoltativo** Creare il servizio di TomCat: <br>
 Per prima cosa, bisogna creare il file di configurazione del servizio: <br>
->         nano /e tc/systemd/system/tomcat.service
+>         nano /etc/systemd/system/tomcat.service
 Copiare nel file la configurazione che è possibile trovare [qui](...) <br>
 Ora, bisogna riavviare i demoni tramite: <br>
 >         systemctl daemon-reload
@@ -103,8 +103,7 @@ Come ultimo passaggio basta configurare l'username per gestire TomCat: <br>
 >         <role rolename="manager-gui" />
 >         <role rolename="admin-gui" />changes
 >         <user username="admin" password="password" roles="manager-gui,admin-gui"/>
-Aggiungere la seguente riga come in [questo file](/TomCat/Files/tomcat-users.xml): <br>
->         <user username="admin" password="password" roles="manager-gui,admin-gui"/>
+Aggiungere, quindi, le righe precedenti come in [questo file](/TomCat/Files/tomcat-users.xml). <br>
 
 Infine riavviare TomCat ed il gioco è fatto!
 >         systemctl restart tomcat
