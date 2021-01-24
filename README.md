@@ -6,5 +6,5 @@
 * FTP Server
 2) Configurazione del [protocollo Samba](SMB)
 * SMB (Samba)
-3) Configurazione di TomCat
+3) Configurazione di [TomCat](TomCat)
 * Apache Tomcat
