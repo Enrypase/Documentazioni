@@ -66,14 +66,6 @@ Se eseguendo i seguenti comandi notiamo che è presente la cartella decompressa,
 Per avviare il programma basterà eseguire il seguente comando: <br>
 >         ./op/tomcat/bin/startup.sh
 
-**Facoltativo** Creare il servizio di TomCat: <br>
-Per prima cosa, bisogna creare il file di configurazione del servizio: <br>
->         nano /etc/systemd/system/tomcat.service
-Copiare nel file la configurazione che è possibile trovare [qui](...) <br>
-Ora, bisogna riavviare i demoni tramite: <br>
->         systemctl daemon-reload
-Una volta fatto ciò il servizio di TomCat è stato creato con successo! <br>
-
 Avviare lo script di TomCat all'avvio del sistema: <br>
 Per fare ciò ci sono più possibilità, io ho utilizzato **/rc.local**. <br>
 Per fare ciò modificare, se già presente oppure creare il seguente file: <br>
